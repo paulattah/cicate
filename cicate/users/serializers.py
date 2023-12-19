@@ -12,7 +12,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         model = User
         fields = [ 'id','name', 'middle_name', 'surname','Username', 'email', 'date_of_birth', 
                   'degree', 'country_of_birth', 'native_language', 'country_of_citizenship',
-                 'usertype', 'password', 'password2']
+                  'password', 'password2']
        
         
     #def validate(self, value):
@@ -61,7 +61,7 @@ class InstitutionRegisterSerializer(serializers.ModelSerializer):
         model = User
         fields = [ 'id','name', 'middle_name', 'Username','surname', 'email', 'institution_name', 
                   'Acronym', 'biography', 'type_of_unversity', 'location', 'linkedin', 
-                  'twitter', 'facebook','usertype', 'password', 'password2']
+                  'twitter', 'facebook', 'password', 'password2']
 
     #def validate(self, value):
         #email = value.get ('email', '')
